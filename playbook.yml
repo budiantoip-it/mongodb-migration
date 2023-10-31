@@ -8,6 +8,6 @@
         path: /root/mongorestore/backup
         state: absent
     - name: Mongodump from mongodb atlas
-      shell: mongodump --username admin --out=backup/mongodb --config=mongodump.cfg
+      shell: mongodump --username USERNAME --out=backup/mongodb --config=mongodump.cfg
     - name: Mongorestore to Digital Ocean managed database - mongodb
-      shell: mongorestore --ssl --tlsInsecure --username admin --config=mongorestore.cfg --nsInclude=DATABASE_NAME backup/mongodb/DATABASE_NAME/
+      shell: mongorestore --ssl --tlsInsecure --username USERNAME --config=mongorestore.cfg --nsInclude=DATABASE_NAME backup/mongodb/DATABASE_NAME/
