@@ -10,3 +10,5 @@
 3. Clone this repository
 4. Change mongodump.cfg and mongorestore.cfg accordingly
 5. Execute `ansible-playbook playbook.yml` in the terminal
+
+For more details, follow this [article](https://dev.to/budiantoip/how-to-migrate-a-mongo-database-with-ansible-playbook-2fha).
